@@ -1,9 +1,17 @@
-HTTP Error 500.52 - URL Rewrite Module Error.
-The expression "*" contains a repeat expression (one of '*', '?', '+', '{' in most contexts) that is not preceded by an expression.
-
-Most likely causes:
-IIS received the request; however, an internal error occurred during the processing of the request. The root cause of this error depends on which module handles the request and what was happening in the worker process when this error occurred.
-IIS was not able to access the web.config file for the Web site or application. This can occur if the NTFS permissions are set incorrectly.
-IIS was not able to process configuration for the Web site or application.
-The authenticated user does not have permission to use this DLL.
-The request is mapped to a managed handler but the .NET Extensibility Feature is not installed.
+2023-06-22 10:07:04 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
+2023-06-22 10:07:04 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 3
+2023-06-22 10:07:04 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 2
+2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
+2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 1
+2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
+2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 1
+2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
+2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
+2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 3
+2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
+2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
+2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 6
+2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
+2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
+2023-06-22 10:07:06 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
+2023-06-22 10:07:06 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 1
