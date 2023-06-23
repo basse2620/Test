@@ -1,17 +1,35 @@
-2023-06-22 10:07:04 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
-2023-06-22 10:07:04 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 3
-2023-06-22 10:07:04 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 2
-2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
-2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 1
-2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
-2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 1
-2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
-2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
-2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 3
-2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
-2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
-2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 6
-2023-06-22 10:07:05 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
-2023-06-22 10:07:05 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 3
-2023-06-22 10:07:06 192.168.20.33 GET / - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 - 500 50 2152071479 2
-2023-06-22 10:07:06 192.168.20.33 GET /favicon.ico - 82 - 192.168.20.33 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/114.0.0.0+Safari/537.36 http://192.168.20.33:82/ 500 50 2152071479 1
+const app = require('express')();
+const httpServer = require('http').createServer(app);
+const io = require('socket.io')(httpServer, {
+  cors: { origin: '*' }
+});
+
+const ipAddress = '192.168.20.33';
+const port = process.env.PORT || 83;
+
+const rooms = new Map(); // Map to store the rooms
+
+io.on('connection', (socket) => {
+  console.log('A user connected');
+
+  socket.on('joinRoom', (roomId) => {
+    socket.join(roomId);
+    console.log(`User joined room ${roomId}`);
+  });
+
+  socket.on('leaveRoom', (roomId) => {
+    socket.leave(roomId);
+    console.log(`User left room ${roomId}`);
+  });
+
+  socket.on('message', (message) => {
+    console.log(message);
+    io.to(message.roomId).emit('message', message.content);
+  });
+
+  socket.on('disconnect', () => {
+    console.log('A user disconnected');
+  });
+});
+
+httpServer.listen(port, ipAddress, () => console.log(`Listening on port ${port}`));
